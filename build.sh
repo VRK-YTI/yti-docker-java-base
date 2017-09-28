@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PROJECT=cls-docker-java-base
+PROJECT=yti-codelist-docker-java-base
 DIR=$PWD/ubuntu
 TAG="latest"
 

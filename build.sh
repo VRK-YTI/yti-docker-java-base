@@ -1,8 +1,8 @@
 #!/bin/sh
 
 PROJECT=yti-codelist-docker-java-base
-DIR=$PWD/ubuntu
-TAG="latest"
+DIR=$PWD/alpine
+TAG="alpine"
 
 if test "$#" -eq 1; then
   DIR=$PWD/$1

@@ -40,5 +40,6 @@ done
 
 JAR_COMMAND="java $JVM_OPTS -jar $JAR_FILE $APP_PARAMS"
 JAR_COMMAND="$(echo -e "${JAR_COMMAND}" | sed -e 's/  */ /g')"
+sleep 5
 echo "running: $JAR_COMMAND"
 exec $JAR_COMMAND

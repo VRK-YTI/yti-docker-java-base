@@ -1,4 +1,4 @@
-# yti-codelist-docker-java-base
+# yti-docker-java-base
 
 Base image for Java services, Java 8.
 
@@ -9,7 +9,7 @@ Base image for Java services, Java 8.
 Create a Dockerfile in your Java service.
 
 ```
-FROM yti-codelist-docker-java-base:latest
+FROM yti-docker-java-base:latest
 
 # replace this with your application's default port
 EXPOSE 9000
@@ -23,19 +23,19 @@ $ docker run -it --rm --name my-running-app my-java-service
 
 ## Image Variants
 
-The yti-codelist-docker-java-base images come in many flavors, each designed for a specific use case.
+The yti-docker-java-base images come in many flavors, each designed for a specific use case.
 
-### yti-codelist-docker-java-base:latest
+### yti--docker-java-base:latest
 
 This image uses Oracle Java 8 JDK and is based on Ubuntu.
 
-### yti-codelist-docker-java-base:debian
+### yti-docker-java-base:debian
 
 This image uses OpenJDK and is based on Debian. If you are unsure about what your needs are, you probably want to use this one.
 
 This tag is based off of official [openjdk docker repository](https://hub.docker.com/_/openjdk/), [Dockerfile](https://github.com/docker-library/openjdk/blob/e6e9cf8b21516ba764189916d35be57486203c95/8-jdk/Dockerfile).
 
-### yti-codelist-docker-java-base:alpine
+### yti-docker-java-base:alpine
 
 This image uses OpenJDK and is based on the Alpine Linux project.
 
@@ -49,31 +49,31 @@ With Alpine Linux
 ```
 build.sh alpine <tag>
 or
-docker build -t yti-codelist-docker-java-base -f `pwd`/alpine/Dockerfile .
+docker build -t yti-docker-java-base -f `pwd`/alpine/Dockerfile .
 ```
 
 With Debian based system
 ```
 build.sh debian <tag>
 or
-docker build -t yti-codelist-docker-java-base -f `pwd`/debian/Dockerfile .
+docker build -t yti-docker-java-base -f `pwd`/debian/Dockerfile .
 ```
 
 With Ubuntu Linux
 ```
 build.sh ubuntu <tag>
 or
-docker build -t yti-codelist-docker-java-base -f `pwd`/ubuntu/Dockerfile .
+docker build -t yti-docker-java-base -f `pwd`/ubuntu/Dockerfile .
 ```
 
 ## Run
 
 ```
-docker run --name yti-codelist-docker-java-base -ti --rm yti-codelist-docker-java-base /bin/sh
+docker run --name yti-docker-java-base -ti --rm yti-docker-java-base /bin/sh
 ```
 
 ## Inspecting running image
 
 ```
-docker exec -it yti-codelist-docker-java-base /bin/sh
+docker exec -it yti-docker-java-base /bin/sh
 ```

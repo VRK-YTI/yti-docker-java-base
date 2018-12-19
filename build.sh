@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PROJECT=yti-codelist-docker-java-base
+PROJECT=yti-docker-java-base
 DIR=$PWD/alpine
 TAG="alpine"
 

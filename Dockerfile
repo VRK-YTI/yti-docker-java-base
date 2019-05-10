@@ -1,4 +1,4 @@
-FROM java:8-jre-alpine
+FROM openjdk:8-jre-alpine
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8

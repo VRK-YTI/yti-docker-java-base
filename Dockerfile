@@ -11,7 +11,9 @@ ENV deploy_dir ${home_dir}/deploy
 # Install common tools
 RUN set -x \
     && apk update && apk upgrade \
-    && apk add --no-cache bash
+    && apk add --no-cache bash \
+    && apk add --no-cache fontconfig \
+    && apk add --no-cache ttf-dejavu 
 
 # Add scripts
 ADD scripts/bootstrap.sh /

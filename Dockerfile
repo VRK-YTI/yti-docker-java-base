@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-alpine
+FROM adoptopenjdk/openjdk11:jre-11.0.6_10-alpine
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8

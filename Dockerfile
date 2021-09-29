@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-alpine
+FROM adoptopenjdk/openjdk11:jre-11.0.6_10-alpine@sha256:a9295aa69d9dbbeb123c7d8b72a8bef5f3523f89523b77802a4d7f74f33df6a9
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8

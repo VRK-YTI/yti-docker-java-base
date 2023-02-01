@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t yti-docker-java11-base:alpine -f Dockerfile .
+docker build -t yti-docker-java17-base:awscorretto -f Dockerfile .

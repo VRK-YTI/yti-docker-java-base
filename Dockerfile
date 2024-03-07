@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:jre-11.0.6_10-alpine@sha256:a9295aa69d9dbbeb123c7d8b72a8bef5f3523f89523b77802a4d7f74f33df6a9
+FROM amazoncorretto:11.0.22-alpine3.19@sha256:1a24347f430decabc6ecdb1cb5175cd9f70c1de7d36b2c902d904ba66fb70cba
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8

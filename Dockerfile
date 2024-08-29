@@ -1,4 +1,4 @@
-FROM amazoncorretto:17@sha256:04d53492ebeee876914966424e25f86e6ccd44395356ee0d9ec9c451726a4684
+FROM amazoncorretto:11.0.22
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8
@@ -10,8 +10,8 @@ ENV deploy_dir ${home_dir}/deploy
 
 # Install common tools
 RUN set -x \ 
-    && yum update && yum upgrade \
-    && yum install bash fontconfig 
+    && yum update -y && yum upgrade -y \
+    && yum install -y bash fontconfig 
 
 # Add scripts
 ADD scripts/bootstrap.sh /

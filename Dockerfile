@@ -1,4 +1,4 @@
-FROM amazoncorretto:17.0.10-alpine3.19@sha256:180e9c91bdbaad3599fedd2f492bf0d0335a9382835aa64669b2c2a8de7c9a22
+FROM amazoncorretto:17.0.21-alpine3.21@sha256:c204fe5c786b2be634af55691109407862375d37a3e2ea542dac2dff5379dda2
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8
